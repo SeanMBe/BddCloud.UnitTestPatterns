@@ -55,6 +55,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample01.IntegrationTestPattern\AfterIHaveAbstractDependencies.cs" />
+    <Compile Include="Sample01.IntegrationTestPattern\ConcreteDependencyForDatabaseRepository.cs" />
+    <Compile Include="Sample01.IntegrationTestPattern\ConcreteDependencyToSeeIfTwitterIsOnline.cs" />
+    <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithConcreteDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
