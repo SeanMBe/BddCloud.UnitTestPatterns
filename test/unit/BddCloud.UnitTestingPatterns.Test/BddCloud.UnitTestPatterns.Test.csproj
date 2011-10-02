@@ -77,6 +77,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_online.cs">
+      <DependentUpon>TwitterServiceWithContractDependenciesSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithContractDependenciesSpecification.cs" />
+    <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_concrete_dependencies_records_twitter_is_online_status.cs">
+      <DependentUpon>TwitterServiceWithConcreteDependenciesSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status.cs">
+      <DependentUpon>TwitterServiceWithContractDependenciesSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithConcreteDependenciesSpecification.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

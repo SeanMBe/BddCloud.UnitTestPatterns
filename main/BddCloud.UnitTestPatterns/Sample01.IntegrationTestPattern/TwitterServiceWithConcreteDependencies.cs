@@ -1,22 +1,22 @@
 namespace BddCloud.UnitTestPatterns.Sample01.IntegrationTestPattern
 {
-    public class TwitterServiceWithConcreteDependencies
+    public class TwitterServiceWithConcreteDependencies : ITwitterService
     {
-        private readonly ConcreteDependencyToSeeIfTwitterIsOnline _dependencyTwitterWeb;
-        private readonly ConcreteDependencyForDatabaseRepository _dependencyForDatabaseRepository;
+        private readonly DependencyToSeeIfTwitterIsOnline _dependencyTwitterWeb;
+        private readonly DependencyForDatabaseRepository _dependencyForDatabaseRepository;
 
         public TwitterServiceWithConcreteDependencies
-            (ConcreteDependencyToSeeIfTwitterIsOnline dependencyTwitterWeb,
-             ConcreteDependencyForDatabaseRepository dependencyForDatabaseRepository)
+            (DependencyToSeeIfTwitterIsOnline dependencyTwitterWeb,
+             DependencyForDatabaseRepository dependencyForDatabaseRepository)
         {
             _dependencyTwitterWeb = dependencyTwitterWeb;
             _dependencyForDatabaseRepository = dependencyForDatabaseRepository;
         }
 
-        public void RecordTwitterStatus()
+        public void RecordTheOnlineStatusOfTwitter()
         {
-            var isTwitterOnline = _dependencyTwitterWeb.IsTwitterOnline();
-            _dependencyForDatabaseRepository.RecordTwitterIsOnline(isTwitterOnline);
+            var isTwitterOnline = _dependencyTwitterWeb.IsTwitterOnline;
+            _dependencyForDatabaseRepository.RecordTwitterOnlineStatus(isTwitterOnline);
         }
     }
 }
