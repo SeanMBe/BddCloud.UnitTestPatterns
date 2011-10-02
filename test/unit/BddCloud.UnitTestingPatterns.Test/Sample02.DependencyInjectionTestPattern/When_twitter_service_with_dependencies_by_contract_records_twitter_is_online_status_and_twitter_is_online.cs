@@ -2,10 +2,10 @@
 using MavenThought.Commons.Testing;
 using Rhino.Mocks;
 
-namespace BddCloud.UnitTestPatterns.Test.Sample01.IntegrationTestPattern
+namespace BddCloud.UnitTestPatterns.Test.Sample02.DependencyInjectionTestPattern
 {
     [Specification]
-    public class When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_online : TwitterServiceWithDependenciesByContractSpecification
+    public class When_twitter_service_with_dependency_injection_records_twitter_is_online_status_and_twitter_is_online : TwitterServiceWithDependencyInjectionSpecification
     {
         protected override void GivenThat()
         {

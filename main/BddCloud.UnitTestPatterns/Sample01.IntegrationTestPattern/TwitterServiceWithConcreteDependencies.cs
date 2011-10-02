@@ -1,3 +1,5 @@
+using BddCloud.UnitTestPatterns.Common;
+
 namespace BddCloud.UnitTestPatterns.Sample01.IntegrationTestPattern
 {
     public class TwitterServiceWithConcreteDependencies : ITwitterService

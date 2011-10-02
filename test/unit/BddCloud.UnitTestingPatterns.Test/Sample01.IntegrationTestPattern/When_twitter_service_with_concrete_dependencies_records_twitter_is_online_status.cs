@@ -1,4 +1,5 @@
 using System;
+using BddCloud.UnitTestPatterns.Common;
 using BddCloud.UnitTestPatterns.Sample01.IntegrationTestPattern;
 using MavenThought.Commons.Testing;
 using SharpTestsEx;

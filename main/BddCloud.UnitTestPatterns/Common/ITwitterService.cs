@@ -1,4 +1,4 @@
-namespace BddCloud.UnitTestPatterns.Sample01.IntegrationTestPattern
+namespace BddCloud.UnitTestPatterns.Common
 {
     public interface ITwitterService
     {

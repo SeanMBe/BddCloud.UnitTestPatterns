@@ -55,18 +55,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample01.IntegrationTestPattern\IDependencyForDatabaseRepository.cs" />
-    <Compile Include="Sample01.IntegrationTestPattern\IDependencyToSeeIfTwitterIsOnline.cs" />
-    <Compile Include="Sample01.IntegrationTestPattern\ITwitterService.cs" />
+    <Compile Include="Common\DependencyForDatabaseRepository.cs" />
+    <Compile Include="Common\DependencyToSeeIfTwitterIsOnline.cs" />
+    <Compile Include="Common\IDependencyForDatabaseRepository.cs" />
+    <Compile Include="Common\IDependencyToSeeIfTwitterIsOnline.cs" />
+    <Compile Include="Common\ITwitterService.cs" />
+    <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependenciesByPropertySetters.cs" />
+    <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependencyInjection.cs" />
     <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithDependenciesByContract.cs" />
-    <Compile Include="Sample01.IntegrationTestPattern\DependencyForDatabaseRepository.cs" />
-    <Compile Include="Sample01.IntegrationTestPattern\DependencyToSeeIfTwitterIsOnline.cs" />
     <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithConcreteDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
