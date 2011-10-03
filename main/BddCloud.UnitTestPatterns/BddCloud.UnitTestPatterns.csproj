@@ -60,8 +60,9 @@
     <Compile Include="Common\IDependencyForDatabaseRepository.cs" />
     <Compile Include="Common\IDependencyToSeeIfTwitterIsOnline.cs" />
     <Compile Include="Common\ITwitterService.cs" />
-    <Compile Include="Sample03.SingleResponsibilityTestPattern\Class1.cs" />
-    <Compile Include="Sample03.SingleResponsibilityTestPattern\ICsvParser.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetRow.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithSingleResponsibility.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ICsvToSpreadsheetRowsParser.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetCreationService.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\IFileReader.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheet.cs" />

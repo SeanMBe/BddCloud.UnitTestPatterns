@@ -102,10 +102,12 @@
     <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependency_property_setters_does_not_set_dependency_for_database_repository.cs">
       <DependentUpon>TwitterServiceWithDependencyInjectionSpecification.cs</DependentUpon>
     </Compile>
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithSingleResponsibilitySpecification.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\When_spreadsheet_import_iwht_multiple_responsibilities_creates_spreadsheet_from_csv_file.cs">
       <DependentUpon>SpreadsheetImportWithMultipleResponsibilitiesSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithMultipleResponsibilitiesSpecification.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\When_spreadsheet_import_with_single_responsibility_creates_spreadsheet_from_csv_file.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
