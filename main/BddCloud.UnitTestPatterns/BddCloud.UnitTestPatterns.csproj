@@ -60,6 +60,10 @@
     <Compile Include="Common\IDependencyForDatabaseRepository.cs" />
     <Compile Include="Common\IDependencyToSeeIfTwitterIsOnline.cs" />
     <Compile Include="Common\ITwitterService.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\IExcelImportService.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\IFileReader.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheet.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\MovieLibraryWithTooManyDependencies.cs" />
     <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependenciesByPropertySetters.cs" />
     <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependencyInjection.cs" />
     <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithDependenciesByContract.cs" />
