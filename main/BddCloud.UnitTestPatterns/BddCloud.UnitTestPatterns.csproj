@@ -61,9 +61,11 @@
     <Compile Include="Common\IDependencyToSeeIfTwitterIsOnline.cs" />
     <Compile Include="Common\ITwitterService.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\Class1.cs" />
-    <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetFactory.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ICsvParser.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetCreationService.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\IFileReader.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheet.cs" />
+    <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadSheetFactory.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetImport.cs" />
     <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependenciesByPropertySetters.cs" />
     <Compile Include="Sample02.DependencyInjectionTestPattern\TwitterServiceWithDependencyInjection.cs" />
