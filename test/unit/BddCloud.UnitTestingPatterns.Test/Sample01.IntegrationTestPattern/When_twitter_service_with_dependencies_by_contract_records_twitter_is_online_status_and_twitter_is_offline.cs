@@ -5,7 +5,8 @@ using Rhino.Mocks;
 namespace BddCloud.UnitTestPatterns.Test.Sample01.IntegrationTestPattern
 {
     [Specification]
-    public class When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline : TwitterServiceWithDependenciesByContractSpecification
+    public class When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline 
+        : TwitterServiceWithDependenciesByContractSpecification
     {
         protected override void GivenThat()
         {
