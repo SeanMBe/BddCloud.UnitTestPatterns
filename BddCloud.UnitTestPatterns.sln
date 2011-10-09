@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddCloud.UnitTestPatterns",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BddCloud.UnitTestPatterns.Test", "test\unit\BddCloud.UnitTestingPatterns.Test\BddCloud.UnitTestPatterns.Test.csproj", "{CF37C5CB-973F-406C-83DB-2A55B0530A5E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PresentationContent", "PresentationContent", "{EA97113B-9C13-4FAA-9EB3-13982BBC45CC}"
+	ProjectSection(SolutionItems) = preProject
+		Presentation.txt = Presentation.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

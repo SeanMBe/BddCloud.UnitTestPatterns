@@ -1,0 +1,1 @@
+The purpose of this presentation is to show you what I have found a valuable, repeatable, and teachable way a team can drive the development of code with automated specifications.

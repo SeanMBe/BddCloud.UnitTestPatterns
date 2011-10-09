@@ -76,6 +76,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecification.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_indexes_out_of_bounds.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_initial_items.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_strings.cs" />
     <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline.cs">
       <DependentUpon>TwitterServiceWithDependenciesByContractSpecification.cs</DependentUpon>
     </Compile>
@@ -117,7 +121,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\main\BddCloud.UnitTestPatterns\BddCloud.UnitTestPatterns.csproj">
       <Project>{68DB2DCC-A280-4B10-8483-CB4AB59B90C0}</Project>
-      <Name>CodeRetreat.Core</Name>
+      <Name>BddCloud.UnitTestPatterns</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

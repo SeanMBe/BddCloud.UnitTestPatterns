@@ -60,6 +60,9 @@
     <Compile Include="Common\IDependencyForDatabaseRepository.cs" />
     <Compile Include="Common\IDependencyToSeeIfTwitterIsOnline.cs" />
     <Compile Include="Common\ITwitterService.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\IAmThePublicApiForEnumerable.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\IAmThePublicApiForCollection.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\IAmThePublicApiForGenericList.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ISpreadsheetRow.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithSingleResponsibility.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\ICsvToSpreadsheetRowsParser.cs" />
