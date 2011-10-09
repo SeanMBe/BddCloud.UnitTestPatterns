@@ -36,5 +36,17 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
         {
             _expected.ForEach((i, e) => Sut[i].Should().Be.EqualTo(e));
         }
+
+        [It]
+        public void Should_have_expected_for_index_of()
+        {
+            _expected.ForEach((i, e) => Sut.IndexOf(e).Should().Be(i));
+        }
+
+        [It]
+        public void Should_have_expected_index_for_overwritten_value()
+        {
+            Sut.IndexOf(_initialItems.ElementAt(1)).Should().Be(-1);
+        }
     }
 }
