@@ -76,6 +76,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_inserted.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecification.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_assigned_to_index.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_indexes_out_of_bounds.cs" />
