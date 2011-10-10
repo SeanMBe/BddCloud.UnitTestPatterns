@@ -76,12 +76,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_inserted.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecification.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_assigned_to_index.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_indexes_out_of_bounds.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_initial_items.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_strings.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_removed_at_index.cs">
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_removed_at_index_that_does_not_exist.cs">
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecification.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_assigned_to_index.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_inserted.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_indexes_out_of_bounds.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_initial_items.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_is_constructed_with_strings.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ListOfStringSpecification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline.cs">
       <DependentUpon>TwitterServiceWithDependenciesByContractSpecification.cs</DependentUpon>
     </Compile>

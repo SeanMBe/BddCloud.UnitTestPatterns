@@ -10,20 +10,12 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
     public class When_list_of_string_has_item_assigned_to_index: ListOfStringSpecification
     {
         private IEnumerable<string> _expected;
-        private IEnumerable<string> _initialItems;
 
         protected override void GivenThat()
         {
             base.GivenThat();
 
-            _initialItems = Enumerable.Create("first", "second", "third");
-
             _expected = Enumerable.Create("first", "expected", "third");
-        }
-
-        protected override IList<string> CreateSut()
-        {
-            return new List<string>(_initialItems);
         }
 
         protected override void WhenIRun()
@@ -46,7 +38,7 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
         [It]
         public void Should_have_expected_index_for_overwritten_value()
         {
-            Sut.IndexOf(_initialItems.ElementAt(1)).Should().Be(-1);
+            Sut.IndexOf(InitialItems.ElementAt(1)).Should().Be(-1);
         }
     }
 }
