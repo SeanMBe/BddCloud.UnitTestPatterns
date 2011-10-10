@@ -6,7 +6,7 @@ using SharpTestsEx;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ExceptionSpecification]
-    public class When_list_of_string_has_item_removed_at_index_that_does_not_exist : ListOfStringSpecification
+    public class When_list_of_string_has_item_removed_at_index_that_does_not_exist : ListOfStringSpecificationWithIListContract
     {
         private ArgumentOutOfRangeException _expectedException;
 

@@ -7,7 +7,7 @@ using SharpTestsEx;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
-    public class When_list_of_string_has_item_removed_at_index : ListOfStringSpecification
+    public class When_list_of_string_has_item_removed_at_index : ListOfStringSpecificationWithIListContract
     {
         private IEnumerable<string> _expectedItems;
         private IEnumerable<int> _expectedIndexOf;

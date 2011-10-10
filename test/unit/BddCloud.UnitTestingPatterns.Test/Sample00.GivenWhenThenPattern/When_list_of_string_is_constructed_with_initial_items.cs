@@ -8,7 +8,7 @@ using Enumerable = MavenThought.Commons.Extensions.Enumerable;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ConstructorSpecification]
-    public class When_list_of_string_is_constructed_with_initial_items : ListOfStringSpecification
+    public class When_list_of_string_is_constructed_with_initial_items : ListOfStringSpecificationWithIListContract
     {
         private IEnumerable<string> _expectedInitialItems;
 

@@ -6,9 +6,8 @@ using SharpTestsEx;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ExceptionSpecification]
-    public class When_list_of_string_indexes_out_of_bounds : ListOfStringSpecification
+    public class When_list_of_string_indexes_out_of_bounds : ListOfStringSpecificationWithIListContract
     {
-        private int _outOfBoundsIndex;
         private ArgumentOutOfRangeException _expectedException;
 
         protected override void GivenThat()

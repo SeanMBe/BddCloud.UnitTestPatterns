@@ -5,7 +5,7 @@ using MavenThought.Commons.Testing;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
-    public class ListOfStringSpecification : AutoMockSpecification<List<string>, IList<string>>
+    public class ListOfStringSpecificationWithIListContract : AutoMockSpecification<List<string>, IList<string>>
     {
         protected internal IEnumerable<string> InitialItems { get; set; }
 
