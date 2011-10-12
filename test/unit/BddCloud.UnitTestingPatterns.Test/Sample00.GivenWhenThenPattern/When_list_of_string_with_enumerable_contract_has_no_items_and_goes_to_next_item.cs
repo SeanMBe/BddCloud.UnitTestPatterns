@@ -6,7 +6,7 @@ using SharpTestsEx;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [Specification]
-    public class When_list_of_string_with_enumerable_contract_has_no_items_and_goes_to_next_item : ListOfStringWithIEnumerableContractSpecification
+    public class When_list_of_string_with_enumerable_contract_has_no_items_and_goes_to_next_item : ListOfStringSpecficationWithIEnumerableContract
     {     
         private IEnumerator<string> _actualEnumerator;
         private bool _actual;

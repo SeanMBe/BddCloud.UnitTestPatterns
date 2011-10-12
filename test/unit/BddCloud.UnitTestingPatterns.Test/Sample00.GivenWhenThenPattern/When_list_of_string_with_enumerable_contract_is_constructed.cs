@@ -6,7 +6,7 @@ using SharpTestsEx;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ConstructorSpecification]
-    public class When_list_of_string_with_enumerable_contract_is_constructed : ListOfStringWithIEnumerableContractSpecification
+    public class When_list_of_string_with_enumerable_contract_is_constructed : ListOfStringSpecficationWithIEnumerableContract
     {
         protected override void GivenThat()
         {

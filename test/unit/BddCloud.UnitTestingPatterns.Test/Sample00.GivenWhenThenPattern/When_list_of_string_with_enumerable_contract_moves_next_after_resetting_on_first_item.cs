@@ -7,7 +7,7 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [Specification]
     public class When_list_of_string_with_enumerable_contract_moves_next_after_resetting_on_first_item
-        : ListOfStringWithIEnumerableContractSpecification
+        : ListOfStringSpecficationWithIEnumerableContract
     {
         private IEnumerator<string> _actualEnumerator;
 

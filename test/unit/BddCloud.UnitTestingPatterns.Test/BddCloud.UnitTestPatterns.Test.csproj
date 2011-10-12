@@ -76,16 +76,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_icollection_contract_clears_an_empty_list.cs">
+      <DependentUpon>ListOfStringSpecificationWithICollectionContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_icollection_contract_adds_item.cs">
+      <DependentUpon>ListOfStringSpecificationWithICollectionContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_icollection_contract_is_created.cs">
+      <DependentUpon>ListOfStringSpecificationWithICollectionContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecificationWithICollectionContract.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_moves_next_after_resetting_on_first_item.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_resets_after_being_on_first_item.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_has_no_items_and_goes_to_next_item.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringWithIEnumerableContractSpecification.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\ListOfStringSpecficationWithIEnumerableContract.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_has_item_removed_at_index.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
@@ -116,13 +126,13 @@
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_goes_to_next_item.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_is_constructed.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_is_constructed_with.cs">
-      <DependentUpon>ListOfStringWithIEnumerableContractSpecification.cs</DependentUpon>
+      <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline.cs">
       <DependentUpon>TwitterServiceWithDependenciesByContractSpecification.cs</DependentUpon>
