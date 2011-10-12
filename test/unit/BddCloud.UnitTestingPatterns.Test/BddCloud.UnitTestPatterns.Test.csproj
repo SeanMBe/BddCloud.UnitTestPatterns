@@ -145,7 +145,7 @@
     <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_concrete_dependencies_records_twitter_is_online_status.cs">
       <DependentUpon>TwitterServiceWithDependenciesByPropertySetters.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependency_injection_records_twitter_is_online_status_and_twitter_is_offline.cs">
+    <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependency_injection_records_twitter_is_online_status_and_twitter_is_online.cs">
       <DependentUpon>TwitterServiceWithDependencyInjectionSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -154,11 +154,11 @@
       <DependentUpon>TwitterServiceWithConcreteDependenciesSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithConcreteDependenciesSpecification.cs" />
-    <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_online.cs">
+    <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependency_injection_records_twitter_is_online_status_and_twitter_is_offline.cs">
       <DependentUpon>TwitterServiceWithDependencyInjectionSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample02.DependencyInjectionTestPattern\When_twitter_service_with_dependency_property_setters_does_not_set_dependency_for_database_repository.cs">
-      <DependentUpon>TwitterServiceWithDependencyInjectionSpecification.cs</DependentUpon>
+      <DependentUpon>TwitterServiceWithDependenciesByPropertySetters.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithSingleResponsibilitySpecification.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\When_spreadsheet_import_iwht_multiple_responsibilities_creates_spreadsheet_from_csv_file.cs">
