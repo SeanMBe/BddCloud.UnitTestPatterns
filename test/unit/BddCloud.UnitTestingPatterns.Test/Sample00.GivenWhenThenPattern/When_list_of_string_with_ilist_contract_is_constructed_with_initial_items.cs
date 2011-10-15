@@ -1,57 +1,28 @@
-using System.Collections.Generic;
-using MavenThought.Commons.Extensions;
 using MavenThought.Commons.Testing;
 using SharpTestsEx;
 using System.Linq;
-using Enumerable = MavenThought.Commons.Extensions.Enumerable;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ConstructorSpecification]
     public class When_list_of_string_with_ilist_contract_is_constructed_with_initial_items : ListOfStringSpecificationWithIListContract
     {
-        private IEnumerable<string> _expectedInitialItems;
-
-        protected override void GivenThat()
+        [It]
+        public void Should_have_expected_number_of_items_in_collection()
         {
-            base.GivenThat();
-
-            _expectedInitialItems = Enumerable.Create("first", "second", "third");
-        }
-
-        protected override IList<string> CreateSut()
-        {
-            return new List<string>(_expectedInitialItems);
+            Sut.Count.Should().Be.EqualTo(InitialItems.Count());
         }
 
         [It]
-        public void Should_have_count_of_zero_for_collection()
+        public void Should_have_expected_number_of_items_in_enumerable()
         {
-            Sut.Count.Should().Be.EqualTo(_expectedInitialItems.Count());
+            Sut.Count().Should().Be.EqualTo(InitialItems.Count());
         }
 
         [It]
-        public void Should_have_empty_enumerable()
+        public void Should_have_same_items_as_expected_in_enumerable()
         {
-            Sut.Count().Should().Be.EqualTo(_expectedInitialItems.Count());
-        }
-
-        [It]
-        public void Should_have_same_items_as_enumerable()
-        {
-            Sut.Should().Have.SameSequenceAs(_expectedInitialItems);
-        }
-
-        [It]
-        public void Should_have_expected_items_using_indexor()
-        {
-            Sut.ForEach((i, s) => Sut[i].Should().Be.EqualTo(_expectedInitialItems.ElementAt(i)));
-        }
-
-        [It]
-        public void Should_have_expected_index_for_each_initial_item()
-        {
-            Sut.ForEach((i, s) => Sut.IndexOf(s).Should().Be.EqualTo(i));
+            Sut.Should().Have.SameSequenceAs(InitialItems);
         }
     }
 }
