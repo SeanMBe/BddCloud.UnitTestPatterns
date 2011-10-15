@@ -76,7 +76,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_reads_first_index.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_second_item.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_last_item.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_first_item.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_assigned_to_index.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
