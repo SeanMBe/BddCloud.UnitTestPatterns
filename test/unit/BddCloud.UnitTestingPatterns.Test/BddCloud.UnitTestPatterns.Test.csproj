@@ -85,10 +85,22 @@
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_first_item.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_assigned_to_index.cs">
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_assigned_to_first_index.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_inserted.cs">
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_assigned_to_last_index.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_assigned_to_second_index.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_inserted_at_first_position.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_inserted_at_last_position.cs">
+      <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_inserted_at_second_position.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_removed_at_index.cs">
@@ -97,7 +109,7 @@
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_has_item_removed_at_index_that_does_not_exist.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_indexes_out_of_bounds.cs">
+    <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_item_with_an_out_of_bounds_index.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_is_constructed_with_initial_items.cs">
@@ -182,7 +194,9 @@
       <Name>BddCloud.UnitTestPatterns</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Sample04.FactoryTestPattern\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

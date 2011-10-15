@@ -77,12 +77,13 @@
     <Compile Include="Sample01.IntegrationTestPattern\TwitterServiceWithConcreteDependencies.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sample03.SingleResponsibilityTestPattern\SpreadsheetImportWithMultipleResponsibilities.cs" />
-    <Compile Include="Sample04.ImplementationAgnosticTestPattern\Class1.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Sample04.FactoryTestPattern\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

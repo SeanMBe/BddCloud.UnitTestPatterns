@@ -9,6 +9,8 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
     {
         protected internal IEnumerable<string> InitialItems { get; set; }
 
+        protected internal string Actual { get; set; }
+
         protected override void GivenThat()
         {
             base.GivenThat();

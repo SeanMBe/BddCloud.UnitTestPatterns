@@ -1,13 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
-using MavenThought.Commons.Extensions;
 using MavenThought.Commons.Testing;
 using SharpTestsEx;
 using Enumerable = MavenThought.Commons.Extensions.Enumerable;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
-    public class When_list_of_string_with_ilist_contract_has_item_inserted : ListOfStringSpecificationWithIListContract
+    public class When_list_of_string_with_ilist_contract_has_item_inserted_at_third_position : ListOfStringSpecificationWithIListContract
     {
         private IEnumerable<string> _expected;
 
@@ -26,13 +25,7 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
         [It]
         public void Should_have_expected_sequence()
         {
-            _expected.ForEach((i, e) => Sut[i].Should().Be.EqualTo(e));
-        }
-
-        [It]
-        public void Should_have_expected_for_index_of()
-        {
-            _expected.ForEach((i, e) => Sut.IndexOf(e).Should().Be(i));
+            Sut.Should().Have.SameSequenceAs(_expected);
         }
     }
 }
