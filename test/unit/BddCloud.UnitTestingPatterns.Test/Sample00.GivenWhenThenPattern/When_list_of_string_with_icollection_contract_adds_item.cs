@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using MavenThought.Commons.Testing;
+﻿using MavenThought.Commons.Testing;
 using SharpTestsEx;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern

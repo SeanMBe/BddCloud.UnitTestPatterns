@@ -7,7 +7,7 @@ using Enumerable = MavenThought.Commons.Extensions.Enumerable;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
-    public class When_list_of_string_has_item_assigned_to_index: ListOfStringSpecificationWithIListContract
+    public class When_list_of_string_with_ilist_contract_has_item_assigned_to_index: ListOfStringSpecificationWithIListContract
     {
         private IEnumerable<string> _expected;
 

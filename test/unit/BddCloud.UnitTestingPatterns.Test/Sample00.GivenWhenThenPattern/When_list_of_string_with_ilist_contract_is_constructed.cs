@@ -6,7 +6,7 @@ using SharpTestsEx;
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
 {
     [ConstructorSpecification]
-    public class When_list_of_string_is_constructed : ListOfStringSpecificationWithIListContract
+    public class When_list_of_string_with_ilist_contract_is_constructed : ListOfStringSpecificationWithIListContract
     {
         protected override IList<string> CreateSut()
         {
