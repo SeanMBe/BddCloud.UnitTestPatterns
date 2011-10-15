@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using MavenThought.Commons.Testing;
-using System.Linq;
 using SharpTestsEx;
 
 namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
@@ -22,7 +21,7 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
         [It]
         public void Should_have_empty_enumerable()
         {
-            Sut.Count().Should().Be.EqualTo(0);
+            Sut.Should().Be.Empty();
         }
     }
 }
