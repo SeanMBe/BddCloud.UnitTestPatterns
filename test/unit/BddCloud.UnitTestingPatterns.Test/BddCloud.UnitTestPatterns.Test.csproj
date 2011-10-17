@@ -76,6 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType1.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType2.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\MyBagSpecification.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_second_item.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>
@@ -151,9 +154,15 @@
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_enumerable_contract_is_constructed_with.cs">
       <DependentUpon>ListOfStringSpecficationWithIEnumerableContract.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_item_not_in_bag.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_number_of_instances_of_equivalent_item_but_different_reference_that_was_added_twice.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_number_of_instances_of_item_that_was_added_to_bag_twice_and_an_unrelated_item_was_also_added_to_bag.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_item_not_in_bag.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_number_of_instances_of_equivalent_item_but_different_reference_that_was_added_twice.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_number_of_instances_of_item_that_was_added_to_bag_twice_and_an_unrelated_item_was_also_added_to_bag.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline.cs">
       <DependentUpon>TwitterServiceWithDependenciesByContractSpecification.cs</DependentUpon>
     </Compile>
