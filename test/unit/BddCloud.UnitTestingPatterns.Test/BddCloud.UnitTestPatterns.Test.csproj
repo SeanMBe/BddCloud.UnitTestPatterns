@@ -76,9 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType1.cs" />
-    <Compile Include="Sample00.GivenWhenThenPattern\MockReferenceType2.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\Common\BaseReferenceType.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\Common\MockReferenceType1.cs" />
+    <Compile Include="Sample00.GivenWhenThenPattern\Common\MockReferenceType2.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\MyBagSpecification.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\When_list_of_string_with_ilist_contract_gets_second_item.cs">
       <DependentUpon>ListOfStringSpecificationWithIListContract.cs</DependentUpon>

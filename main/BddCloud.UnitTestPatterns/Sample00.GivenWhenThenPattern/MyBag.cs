@@ -18,7 +18,10 @@ namespace BddCloud.UnitTestPatterns.Sample00.GivenWhenThenPattern
         /// <returns>The number of instances of object in bag. 0 if no instances are found in bag.</returns>
         public int NumberOfEquivalentInstances(object instance)
         {
-            return _instanceCounts[instance];
+            int matchingCount;
+            _instanceCounts.TryGetValue(instance, out matchingCount);
+
+            return matchingCount;
         }
 
         /// <summary>

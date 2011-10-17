@@ -1,3 +1,4 @@
+using BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern.Common;
 using MavenThought.Commons.Testing;
 using SharpTestsEx;
 

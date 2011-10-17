@@ -1,4 +1,4 @@
-namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
+namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern.Common
 {
     public class MockReferenceType2 : BaseReferenceType
     {
