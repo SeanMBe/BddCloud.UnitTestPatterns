@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 namespace BddCloud.UnitTestPatterns.Sample00.GivenWhenThenPattern
@@ -46,6 +47,21 @@ namespace BddCloud.UnitTestPatterns.Sample00.GivenWhenThenPattern
         /// <param name="instance">Instance to remove from bag. If no instance is found, throw an exception.</param>
         public void Remove(object instance)
         {
+            int matchingCount;
+            _instanceCounts.TryGetValue(instance, out matchingCount);
+            if(matchingCount == 0)
+            {
+                throw new Exception("Not found in bag");
+            }
+            
+            if(matchingCount == 1)
+            {
+                _instanceCounts.Remove(instance);
+            }
+            else
+            {
+                _instanceCounts[instance] = matchingCount - 1;
+            }
         }
     }
 }

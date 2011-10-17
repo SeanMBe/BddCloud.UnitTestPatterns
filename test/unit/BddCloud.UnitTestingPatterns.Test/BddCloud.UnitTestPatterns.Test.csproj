@@ -76,6 +76,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_removes_an_instance_not_in_bag.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\Common\BaseReferenceType.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\Common\MockReferenceType1.cs" />
     <Compile Include="Sample00.GivenWhenThenPattern\Common\MockReferenceType2.cs" />
@@ -161,6 +164,12 @@
       <DependentUpon>MyBagSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_gets_number_of_instances_of_item_that_was_added_to_bag_twice_and_an_unrelated_item_was_also_added_to_bag.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_removes_an_instance_with_only_one_in_bag.cs">
+      <DependentUpon>MyBagSpecification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sample00.GivenWhenThenPattern\When_my_bag_removes_an_instance_with_two_in_bag.cs">
       <DependentUpon>MyBagSpecification.cs</DependentUpon>
     </Compile>
     <Compile Include="Sample01.IntegrationTestPattern\When_twitter_service_with_dependencies_by_contract_records_twitter_is_online_status_and_twitter_is_offline.cs">
