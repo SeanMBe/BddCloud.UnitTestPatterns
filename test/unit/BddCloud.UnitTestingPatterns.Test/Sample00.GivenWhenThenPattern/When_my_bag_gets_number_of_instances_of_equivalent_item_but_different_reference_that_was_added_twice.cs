@@ -7,32 +7,32 @@ namespace BddCloud.UnitTestPatterns.Test.Sample00.GivenWhenThenPattern
         : MyBagSpecification
     {
         private int _actual;
-        private MockReferenceType1 _mockFirstInstance;
-        private MockReferenceType2 _mockSecondInstanceThatIsEquivalentToFirstInstance;
-        private MockReferenceType2 _mockThirdInstanceThatIsEquivalentToFirstInstance;
-        private MockReferenceType1 _mockReferenceTypeThatIsNotEquivalentToOtherThree;
+        private MockReferenceType1 _mockFirstReferenceType1InstanceWithHashCode1;
+        private MockReferenceType2 _mockFirstReferenceType2InstanceWithHashCode1;
+        private MockReferenceType2 _mockSecondReferenceType2InstanceWithHashCode1;
+        private MockReferenceType1 _mockSecondReferenceType1InstanceButWithHashCode2;
 
         protected override void AndGivenThatAfterCreated()
         {
             base.AndGivenThatAfterCreated();
             
-            const int hashCodeForTwoInstances = 8;
-            const int hashCodForOtherInstance = hashCodeForTwoInstances + 1;
+            const int hashCode1 = 8;
+            const int hashCod2 = hashCode1 + 1;
 
-            _mockFirstInstance = new MockReferenceType1(hashCodeForTwoInstances);
-            _mockSecondInstanceThatIsEquivalentToFirstInstance = new MockReferenceType2(hashCodeForTwoInstances);
-            _mockThirdInstanceThatIsEquivalentToFirstInstance = new MockReferenceType2(hashCodeForTwoInstances);
-            _mockReferenceTypeThatIsNotEquivalentToOtherThree = new MockReferenceType1(hashCodForOtherInstance);
+            _mockFirstReferenceType1InstanceWithHashCode1 = new MockReferenceType1(hashCode1);
+            _mockFirstReferenceType2InstanceWithHashCode1 = new MockReferenceType2(hashCode1);
+            _mockSecondReferenceType2InstanceWithHashCode1 = new MockReferenceType2(hashCode1);
+            _mockSecondReferenceType1InstanceButWithHashCode2 = new MockReferenceType1(hashCod2);
 
-            Sut.Add(_mockFirstInstance);
-            Sut.Add(_mockSecondInstanceThatIsEquivalentToFirstInstance);
-            Sut.Add(_mockThirdInstanceThatIsEquivalentToFirstInstance);
-            Sut.Add(_mockReferenceTypeThatIsNotEquivalentToOtherThree);
+            Sut.Add(_mockFirstReferenceType1InstanceWithHashCode1);
+            Sut.Add(_mockFirstReferenceType2InstanceWithHashCode1);
+            Sut.Add(_mockSecondReferenceType2InstanceWithHashCode1);
+            Sut.Add(_mockSecondReferenceType1InstanceButWithHashCode2);
         }
 
         protected override void WhenIRun()
         {
-            _actual = Sut.NumberOfEquivalentInstances(_mockSecondInstanceThatIsEquivalentToFirstInstance);
+            _actual = Sut.NumberOfEquivalentInstances(_mockFirstReferenceType2InstanceWithHashCode1);
         }
 
         [It]
